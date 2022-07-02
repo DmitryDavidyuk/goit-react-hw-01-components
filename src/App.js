@@ -1,16 +1,17 @@
 import Profile from './components/profile';
-import user from './user.json';
+import users from './user.json';
 
 export default function App() {
-  return (
-    <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </div>
-  );
+  return users.map(user => (
+    <Profile
+      key={user.username}
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      followers={user.stats.followers}
+      views={user.stats.views}
+      likes={user.stats.likes}
+    />
+  ));
 }
