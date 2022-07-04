@@ -1,6 +1,6 @@
-import Profile from './profile';
+import { Profile } from './profile';
 
-function ProfileList({ items }) {
+export const ProfileList = ({ items }) => {
   return items.map(item => (
     <Profile
       key={item.username}
@@ -13,6 +13,6 @@ function ProfileList({ items }) {
       likes={item.stats.likes}
     />
   ));
-}
+};
 
 export default ProfileList;

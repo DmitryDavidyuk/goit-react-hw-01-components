@@ -12,48 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.description {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.tag,
-.location {
-  color: rgba(0, 0, 0, 0.5);
-  margin: 15 15;
-}
-
-.avatar {
-  width: 250px;
-  border-radius: 50%;
-}
-
-.profile {
-  width: 250px;
-  background-color: rgb(255, 250, 250);
-  justify-content: center;
-}
-
-.name {
-  font-size: 25px;
-  font-weight: 800;
-  margin: 15px 0;
-}
-
-.stats li {
+li {
   list-style: none;
 }
 
-.stats {
-  display: flex;
-  background: rgb(222, 222, 222);
-  padding-bottom: 15px;
-}
-
-.label {
-  display: inline-block;
-  padding: 15px 0;
-  color: rgb(146, 146, 146);
+.container {
+  width: 250px;
+  justify-content: center;
 }

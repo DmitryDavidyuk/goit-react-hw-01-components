@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import CSS from 'components/profiles/profile.module.css';
 
-export default function Profile({
+export const Profile = ({
   username,
   tag,
   location,
@@ -8,33 +9,33 @@ export default function Profile({
   followers,
   views,
   likes,
-}) {
+}) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={CSS.profile}>
+      <div className={CSS.description}>
+        <img src={avatar} alt="User avatar" className={CSS.avatar} />
+        <p className={CSS.name}>{username}</p>
+        <p className={CSS.tag}>@{tag}</p>
+        <p className={CSS.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={CSS.stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className={CSS.label}>Followers</span>
+          <span className={CSS.quantity}>{followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+          <span className={CSS.label}>Views</span>
+          <span className={CSS.quantity}>{views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className={CSS.label}>Likes</span>
+          <span className={CSS.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
   );
-}
+};
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
