@@ -13,7 +13,7 @@ export const App = () => {
     <Container>
       <ProfileList items={users} />
       <StatiisticsList title="Upload stats" stats={data} />
-      <FriendsList friends={friends} />;
+      <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </Container>
   );
